@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendyan Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="header">
+      <div class="contaner">
+        <nav>
+          <img src="black sendyan store logo.png" class="logo">
+          <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a> </li>
+            <li><a href="#">Servicess</a> </li>
+            <li><a href="#">Portfolio</a> </li>
+            <li><a href="#">Contact</a> </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer </p>
+          <h1>Hi, I'm <span>Sendyan</span> Abdallah </h1>
+        </div>
+      </div>
+    </div>
+<!-- ------------------about---------------------------- -->
+    <div class="about">
+      <div class="container">
+        <div class="row">
+         
+         <div class="about-col-2">
+          <img src="29271772229.png" class="img" >
+          <div class="sub-title">
+          <h1 >About Me</h1>
+          <p>Second anesthesia specialist certified from
+             Saudi commission for health specialties with 
+             more than two years of work experience in 
+             anesthesia field in various departments such
+              as obstetrics, general surgery, pediatrics, 
+              plastic surgery, spine surgery, urology, and 
+              others. testing and calibrating job-related
+               equipment, explaining procedures and monitoring 
+               patients under anesthesia. Dedicated to contributing
+                to safe, efficient anesthesia care.</p>
+              
+                <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links"onclick="opentab('experience')">Experience</p>
+          <p class="tab-links"onclick="opentab('Education')">Education</p>
+         </div>
+         <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>UI?UX</span><br>Desiging web/app interfaces</li>
+            <li><span>Web Devolepment</span><br>web app Development</li>
+            <li><span>app Devolepment</span><br>Building Android/ios apps </li>
+          </ul>
+         </div>
+
+         <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Free Lancer</span><br>I work on defrent progect as free lancer</li>
+            <li><span>Arte Spislise Hospital</span><br>Build a hospetal system for Arte Spslise Hospetal</li>
+          </ul>
+         </div>
+       
+         <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>AOU</span><br>IT bacaloria degree</li>
+            <li><span>Web Devolepment corse</span><br>web app Development course on Corcera</li>
+            <li><span>UX Desine Corse</span><br>UX Google corse</li>
+          </ul>
+         </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+  
+   function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+   }
+
+</script>  
+
+</body>
+</html>
